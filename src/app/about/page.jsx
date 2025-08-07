@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 
 export default function AboutUsPage() {
   return (
-    <main className="flex flex-col items-center justify-center  pt-28 min-h-screen bg-gray-950 p-10">
-      <section className="h-72 bg-gray-100 flex flex-col w-full justify-center items-center text-center px-">
+    <main className="flex flex-col items-center justify-center  pt-28 min-h-screen bg-gray-950">
+      {/* Header */}
+      <section className="h-72 bg-gray-100 flex flex-col w-full justify-center items-center text-center px-6">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -21,7 +22,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Who We Are */}
-      <section className="grid md:grid-cols-2 gap-14 items-center mb-28 md:mt-36 ">
+      <section className="grid md:grid-cols-2 gap-14 items-center mb-28 md:mt-36 px-4 md:px-10">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -50,7 +51,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="grid md:grid-cols-2 gap-10 mb-28">
+      <section className="grid md:grid-cols-2 gap-10 mb-28 px-4 md:px-10">
         <div className="bg-white p-8 shadow-lg rounded-xl border-t-4 border-blue-500">
           <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent  inline-block">
             Our Mission
@@ -118,7 +119,7 @@ export default function AboutUsPage() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8 rounded-2xl text-center w-full shadow-xl mb-20"
+        className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8  text-center w-full shadow-xl mb-20"
       >
         <h3 className="text-3xl font-bold mb-4">Ready to Work With Us?</h3>
         <p className="text-lg mb-8 max-w-xl mx-auto">

@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         {/* Navigation Links */}
-        <div className="md:w-1/4 grid grid-cols-2 gap-6">
+        <div className="md:w-1/4 grid grid-cols-2 gap-6 px-4">
           <div>
             <h4 className="text-xl font-semibold mb-5">Services</h4>
             <ul className="space-y-3">

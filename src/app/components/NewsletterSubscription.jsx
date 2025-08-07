@@ -24,7 +24,7 @@ export default function NewsletterSubscription() {
   };
 
   return (
-    <section className="bg-gray-100 py-16 px-6">
+    <section className="bg-gray-100 py-16 px-6 mx-auto">
       <motion.div
         className="max-w-3xl mx-auto text-center"
         initial={{ opacity: 0, y: 30 }}

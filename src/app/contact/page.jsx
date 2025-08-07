@@ -42,7 +42,7 @@ export default function ContactPage() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-6xl  bg-white rounded-2xl shadow-xl my-10 md:my-20 flex flex-col md:flex-row overflow-hidden"
+        className="max-w-6xl  bg-white rounded-2xl shadow-xl my-10 md:my-20 flex flex-col md:flex-row overflow-hidden mx-4 md:mx-0"
       >
         {/* Left info panel */}
         <div className="md:w-1/2 bg-gradient-to-br from-blue-500 via-purple-600 to-pink-600 text-white p-14 flex flex-col justify-center">

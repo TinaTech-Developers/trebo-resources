@@ -9,8 +9,7 @@ const allProjects = [
     category: "Scaffolding",
     title: "City Center Scaffolding",
     description: "Multi-story scaffold solution in urban CBD.",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+    image: "Scaffolding.png",
     slug: "city-center-scaffolding",
   },
   {
@@ -18,8 +17,7 @@ const allProjects = [
     category: "Cleaning",
     title: "Residential Site Cleaning",
     description: "Post-build cleanup for high-end duplex property.",
-    image:
-      "https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=800&q=80",
+    image: "cleaning.jpg",
     slug: "residential-cleaning",
   },
   {
@@ -27,8 +25,7 @@ const allProjects = [
     category: "Scaffolding",
     title: "Bridge Maintenance Scaffold",
     description: "Temporary access scaffolding over water.",
-    image:
-      "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
+    image: "bridge.jpg",
     slug: "bridge-scaffold",
   },
   {
@@ -36,8 +33,7 @@ const allProjects = [
     category: "Cleaning",
     title: "Industrial Plant Cleaning",
     description: "Deep cleaning service for large industrial plant.",
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    image: "industry.jpg",
     slug: "industrial-plant-cleaning",
   },
   {
@@ -45,8 +41,7 @@ const allProjects = [
     category: "Other",
     title: "High-Rise Scaffold Rental",
     description: "Custom scaffold for 18-story building project.",
-    image:
-      "https://images.unsplash.com/photo-1534119414535-6b2a81e0f031?auto=format&fit=crop&w=800&q=80",
+    image: "scaffold tower.jpg",
     slug: "highrise-scaffold",
   },
   {
@@ -54,8 +49,7 @@ const allProjects = [
     category: "Other",
     title: "Construction Debris Removal",
     description: "Full-site waste clearing after demolition.",
-    image:
-      "https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=800&q=80",
+    image: "images.jpeg",
     slug: "debris-removal",
   },
 ];
