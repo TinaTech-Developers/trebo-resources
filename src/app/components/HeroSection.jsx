@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Link from "next/link";
@@ -9,7 +10,6 @@ const floatingShapes = [
   { size: 60, left: "50%", top: "75%", delay: 2 },
 ];
 
-// Background images + corresponding text sets
 const slides = [
   {
     image:
@@ -36,7 +36,6 @@ export default function HeroSection() {
   const controls = useAnimation();
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Rotate SVG icon continuously
   useEffect(() => {
     controls.start({
       rotate: 360,
@@ -44,7 +43,6 @@ export default function HeroSection() {
     });
   }, [controls]);
 
-  // Cycle slides every 8 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
@@ -67,11 +65,10 @@ export default function HeroSection() {
             transition={{ duration: 1.5 }}
           />
         ))}
-        {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/80 to-black/90" />
       </div>
 
-      {/* Floating animated shapes */}
+      {/* Floating shapes */}
       {floatingShapes.map(({ size, left, top, delay }, i) => (
         <motion.div
           key={i}
@@ -88,22 +85,30 @@ export default function HeroSection() {
         />
       ))}
 
-      {/* Rotating scaffold SVG icon */}
-      {/* Rotating logo icon */}
-      <motion.div
-        animate={controls}
-        className="mb-8"
-        style={{ width: 80, height: 80 }}
-        aria-hidden="true"
-      >
-        <img
-          src="/logo.png" // ✅ Replace with your actual logo path
-          alt="Company Logo"
-          className="w-full h-full object-contain"
+      {/* Rotating logo icon with flashing light */}
+      <div className="relative my-10" style={{ width: 80, height: 80 }}>
+        <motion.div
+          className="absolute inset-0 rounded-full bg-blue-300 blur-2xl "
+          initial={{ opacity: 0.5, scale: 1 }}
+          animate={{ opacity: [0.3, 0.9, 0.3], scale: [1, 1.3, 1] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         />
-      </motion.div>
 
-      {/* Text content (fade & slide animation synced with slides) */}
+        <motion.div
+          animate={controls}
+          className="relative z-10"
+          style={{ width: 80, height: 80 }}
+          aria-hidden="true"
+        >
+          <img
+            src="/logo.png"
+            alt="Company Logo"
+            className="w-full h-full object-contain"
+          />
+        </motion.div>
+      </div>
+
+      {/* Slide text */}
       {slides.map(({ headline, subtitle }, i) =>
         i === currentIndex ? (
           <motion.div
@@ -124,7 +129,7 @@ export default function HeroSection() {
         ) : null
       )}
 
-      {/* Buttons */}
+      {/* CTA buttons */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

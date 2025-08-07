@@ -92,6 +92,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/services"
+                  className="hover:text-gradient transition"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:text-gradient transition">
                   About Us
                 </Link>
@@ -131,10 +139,12 @@ export default function Footer() {
               href="mailto:info@yourcompany.co.zw"
               className="hover:text-blue-400"
             >
-              info@yourcompany.co.zw
+              info@trebo-resources.com
             </a>
           </p>
-          <p className="mt-4">123 Main Street, Harare, Zimbabwe</p>
+          <p className="mt-4">
+            39 Aldergill Road Heelands, Milton Keynes MK13 7PT, UK
+          </p>
         </div>
       </div>
       <div className="flex items-center justify-center h-14 mt-16 mb-0 w-full bg-blue-950">
