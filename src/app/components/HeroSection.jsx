@@ -13,21 +13,19 @@ const floatingShapes = [
 const slides = [
   {
     image:
-      "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1920&q=80",
+      "working-construction-harare-construction-worker-working-building-harare-cbd-zimbabwe-156635588.webp",
     headline: "Scaffold Hiring & Construction Site Cleaning",
     subtitle:
       "Safe, reliable, and professional services tailored to your construction needs.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
+    image: "scaffold-closeup.jpg",
     headline: "Quality Scaffold Rentals For Every Project",
     subtitle:
       "Flexible, affordable scaffold hire solutions for all construction sites.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1920&q=80",
+    image: "post-construction-cleaning-services.jpg",
     headline: "Expert Site Cleaning Services You Can Trust",
     subtitle:
       "Keep your site safe and tidy with our professional cleaning teams.",
@@ -91,27 +89,18 @@ export default function HeroSection() {
       ))}
 
       {/* Rotating scaffold SVG icon */}
+      {/* Rotating logo icon */}
       <motion.div
         animate={controls}
         className="mb-8"
-        style={{ width: 120, height: 120 }}
+        style={{ width: 80, height: 80 }}
         aria-hidden="true"
       >
-        <svg
-          viewBox="0 0 64 64"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-full stroke-blue-400"
-          strokeWidth={2}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect x="12" y="12" width="40" height="40" rx="2" ry="2" />
-          <line x1="12" y1="12" x2="52" y2="52" />
-          <line x1="52" y1="12" x2="12" y2="52" />
-          <line x1="32" y1="12" x2="32" y2="52" />
-          <line x1="12" y1="32" x2="52" y2="32" />
-        </svg>
+        <img
+          src="/logo.png" // ✅ Replace with your actual logo path
+          alt="Company Logo"
+          className="w-full h-full object-contain"
+        />
       </motion.div>
 
       {/* Text content (fade & slide animation synced with slides) */}

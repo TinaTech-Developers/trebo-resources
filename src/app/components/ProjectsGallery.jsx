@@ -31,7 +31,7 @@ const projects = [
 
 export default function ProjectsGallery() {
   return (
-    <section className="py-20 px-6 bg-gray-100">
+    <section className="py-20 px-6 bg-gray-950">
       <div className="max-w-7xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}

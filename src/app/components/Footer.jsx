@@ -9,12 +9,12 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 py-16 px-6">
+    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-gray-300 pt-16 px-">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12">
         {/* Centered Logo & Tagline */}
         <div className="md:w-1/4 flex flex-col items-center md:items-start space-y-6">
           <h3 className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent select-none cursor-default">
-            YourCompany
+            Trebo Resources
           </h3>
           <p className="text-gray-400 text-center md:text-left">
             Delivering reliable scaffolding and site cleaning solutions with
@@ -136,6 +136,19 @@ export default function Footer() {
           </p>
           <p className="mt-4">123 Main Street, Harare, Zimbabwe</p>
         </div>
+      </div>
+      <div className="flex items-center justify-center h-14 mt-16 mb-0 w-full bg-blue-950">
+        <p className="text-center text-green-100 text-sm mt-8">
+          Developed by
+          <a
+            className="text-sm font-semibold justify-center ml-1"
+            href="https://www.tinasoftnexus.co.zw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TinaSoft Nexus
+          </a>
+        </p>
       </div>
 
       <style jsx>{`

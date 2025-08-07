@@ -6,28 +6,26 @@ const services = [
     title: "Scaffold Hiring",
     description:
       "Premium, safety-certified scaffolding solutions designed to suit projects of all sizes.",
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
+    image: "Scaffolding.png",
   },
   {
     title: "Site Cleaning Services",
     description:
       "Comprehensive construction site cleaning to maintain safe, tidy working environments.",
-    image:
-      "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=400&q=80",
+    image: "cleaning.jpg",
   },
   {
     title: "Health & Safety Compliance",
     description:
       "Ensure your site meets regulatory requirements with our expert safety support.",
     image:
-      "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=400&q=80",
+      "health-safety-guidelines-in-the-construction-industry-2021-7874.webp",
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section className="bg-gray-100 py-20 px-6">
+    <section className="bg-gray-950 py-20 px-6">
       <div className="flex flex-col max-w-7xl mx-auto items-center justify-center">
         {/* Section Heading */}
         <motion.h2
@@ -49,10 +47,10 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.2 }}
-              className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+              className="bg-black rounded-lg  p-6 flex flex-col items-center text-center shadow-2xl"
             >
               {/* Image */}
-              <div className="w-full h-28 mb-6 rounded-lg overflow-hidden shadow-md">
+              <div className="w-full h-44 mb-6 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -67,7 +65,7 @@ export default function ServicesSection() {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-200 leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

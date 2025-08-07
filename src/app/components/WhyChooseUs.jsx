@@ -11,7 +11,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-gray-900">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Image section */}
         <motion.div
@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
           className="w-full md:w-1/2"
         >
           <img
-            src="https://images.unsplash.com/photo-1591696210198-03733289d43b?auto=format&fit=crop&w=800&q=80"
+            src="/whyus1.jpg"
             alt="Construction workers"
             className="w-full h-[400px] object-cover rounded-lg shadow-lg"
           />
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight inline-block">
             Why Choose Us
           </h2>
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <p className="text-gray-200 mb-8 leading-relaxed">
             We pride ourselves on offering professional, reliable, and
             affordable scaffolding and cleaning services to the construction
             industry.
@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
                 <span className="text-blue-600 mt-1">
                   <FaCheckCircle size={22} />
                 </span>
-                <span className="text-gray-700">{item}</span>
+                <span className="text-gray-400">{item}</span>
               </li>
             ))}
           </ul>
